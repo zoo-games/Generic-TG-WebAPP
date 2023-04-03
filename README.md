@@ -1,11 +1,14 @@
-#Preriquisite
+## Screenshot of Login WebAPP
+![image](https://user-images.githubusercontent.com/128964/229464547-be7f2601-0aa3-4bce-bead-33ad2eda9481.png)
+
+## Prerequisite
 1. Mongo DB - To keep your session record. You can regster at https://mongodb.com/ for a free one to test the your game
 2. NodeJS stack for Bot development with "node-telegram-bot-api" you can check it out at https://github.com/yagop/node-telegram-bot-api
 3. Some knowledge of Telegram BOT API. You can check it out at https://core.telegram.org/bots/api
 4. Some knowledge of Telegram WebAPP. You can check it out at https://core.telegram.org/bots/webapps
 5. ZooGames API KEY and SECRET you can ask us on Telegram https://t.me/ZooEcosystem (Zoo.Games Sub Topic)
 
-#Flow of Authentication
+## Flow of Authentication
 1. After the WebApp popped up. It will show a Form for user to login
 2. If you set a right Mongo DB connection. telegram ID of user, JWT Token will be recorded and will be have a DM message from bot to user privately with Logged in Zoo.Games ID, Primary Address, Mirror Address
 3. If something wrong, it will show an alert to let user fix it.
@@ -13,7 +16,7 @@
 5. You can follow the Zoo.Games Developer Document at https://dev.zoo.games/
 
 
-#BOT Code
+## BOT Code
 To call the Telegram Webapp. You can use sendMessage, sendPhoto API with reply markup of inline_keyboard
 
 * We use "node-telegram-bot-api" node module to handle our interaction with Telegram API
