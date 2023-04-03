@@ -9,7 +9,20 @@
 5. The **Vercel service** can be used to host your WebAPP.
 
 ## Flow of Authentication
-The authentication flow involves the display of a login form on the WebApp. Upon successful connection to the right MongoDB and input of the user's Telegram ID, a JWT Token will be recorded. The user will also receive a direct message from the bot, containing their logged in Zoo.Games ID, Primary Address, and Mirror Address. If there are any errors, an alert will be displayed to prompt the user to fix it.
+The authentication flow involves the display of a login form on the WebApp. Upon successful connection to the right MongoDB and input of the user's Telegram ID, a JWT Token will be recorded as the following structure:
+
+```
+_id: 123456abcdefg
+network: "testnet"
+telegram_id: 123456789
+dm_id: 123456789
+mirror_address: "0x0000..."
+primary_address: "0x0000..."
+user_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdlbnNoaW1hcm8iL…"
+zoo_games_id: "myZooGamesID"
+```
+
+The user will also receive a direct message from the bot, containing their logged in Zoo.Games ID, Primary Address, and Mirror Address. If there are any errors, an alert will be displayed to prompt the user to fix it.
 
 You can continue writing your BOT code to get TG user id, username and ZooGames JWT for further gameplay. The Zoo.Games Developer Document can be followed at https://dev.zoo.games/. (https://dev.zoo.games/)
 
@@ -37,6 +50,8 @@ bot.sendMessage(msg.chat.id, 'Please click button below to login', {
 #BOT AND DATABASE
 BOT_TOKEN=
 DB_URI = mongodb+srv://[Your Mongo crential and endpoint]/?retryWrites=true&w=majority
+DB_NAME=MYGame
+DB_COLLECTION_USERS=users
 
 #ZOOGAMES
 ZG_API_KEY=
