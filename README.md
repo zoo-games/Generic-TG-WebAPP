@@ -7,6 +7,7 @@
 3. Some knowledge of Telegram BOT API. You can check it out at https://core.telegram.org/bots/api
 4. Some knowledge of Telegram WebAPP. You can check it out at https://core.telegram.org/bots/webapps
 5. ZooGames API KEY and SECRET you can ask us on Telegram https://t.me/ZooEcosystem (Zoo.Games Sub Topic)
+6. You can use "Vercel" service to host your WebAPP
 
 ## Flow of Authentication
 1. After the WebApp popped up. It will show a Form for user to login
