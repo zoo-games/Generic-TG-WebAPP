@@ -1,0 +1,268 @@
+.pageWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.loginWrapper {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 14px;
+  background: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  .header {
+    border-radius: 14px 14px 0 0;
+    height: 80px;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    .img {
+      img {
+        width: 54px;
+        height: auto;
+        margin-left: 30px;
+        border-radius: 50%;
+        max-height: 54px;
+        display: block;
+      }
+    }
+    .signin {
+      height: 40px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        // font-style: italic;
+      }
+      .subtitle {
+        font-size: 10px;
+        font-weight: 600;
+        color: white;
+        span {
+          color: #0bda04;
+          outline: none;
+        }
+      }
+    }
+  }
+  .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    .inputTitle {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .zoogameslogo {
+        position: absolute;
+        right: -110px;
+        //transform: translateY(-20px);
+        svg {
+          height: 30px;
+        }
+      }
+      .img {
+        height: 40px;
+        .dummyID {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+          background-color: #0bda04;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          height: auto;
+          margin-right: 10px;
+        }
+      }
+      .zoogamesid {
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          color: white;
+          font-style: italic;
+          margin-top: -5px;
+        }
+        .subtitle {
+          font-size: 10px;
+          font-weight: 600;
+          a {
+            color: #0bda04;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .g2fa {
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          color: white;
+          font-style: italic;
+          margin-top: -5px;
+        }
+        .subtitle {
+          font-size: 10px;
+          font-weight: 600;
+          a {
+            color: #0bda04;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    form {
+      width: 100%;
+    }
+    input {
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 2px #0bda04;
+      }
+      width: 100%;
+
+      text-transform: lowercase;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      height: 40px;
+      border: 0;
+      padding: 3px 10px;
+      color: white;
+      background: #333333;
+      font-weight: bold;
+      font-size: 16px;
+      outline: none;
+    }
+    .otpInput {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      input {
+        text-align: center;
+        height: 40px;
+        padding: 0;
+        width: auto;
+        flex: 1;
+        font-size:18px;
+      }
+    }
+    button {
+      &:focus,
+      &:hover,
+      &:active {
+        transform: scale(1.02);
+      }
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: scale(1);
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1px 6px;
+      div.btnContent {
+        display: flex;
+      }
+      span {
+        //margin:0 auto;
+        margin-left: 15px;
+      }
+      svg {
+        &:first-child {
+          width: 30px;
+          height: auto;
+          fill: white;
+          margin-left: 10px;
+        }
+        &:last-child {
+          height: 30px;
+          width: auto;
+          fill: black;
+          margin-right: 5px;
+        }
+      }
+      transition: 0.1s ease-in-out;
+      cursor: pointer;
+      height: 50px;
+      margin-bottom: 10px;
+      background: #0bda04;
+      color: black;
+      font-weight: 900;
+      border-radius: 6px;
+      border: 0;
+      outline: 0;
+      font-size: 18px;
+      width: 100%;
+    }
+    .remark {
+      color: white;
+      font-size: 10px;
+      margin-bottom: 10px;
+      line-height: 16px;
+    }
+    .signup {
+      cursor: pointer;
+      height: 50px;
+      background: #333333;
+      color: black;
+      border-radius: 6px;
+      border: 0;
+      outline: 0;
+      font-size: 18px;
+      width: 100%;
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1px 6px;
+      div.btnContent {
+        display: flex;
+      }
+      span {
+        margin-left: 15px;
+      }
+      svg {
+        &:first-child {
+          width: 30px;
+          height: auto;
+          fill: #0bda04;
+          margin-left: 10px;
+        }
+        &:last-child {
+          height: 30px;
+          width: auto;
+          fill: #0bda04;
+          margin-right: 5px;
+        }
+      }
+      span div {
+        color: white;
+        &:first-child {
+          font-size: 10px;
+          font-weight: 600;
+        }
+        line-height: 1;
+        font-size: 16px;
+        font-weight: 900;
+      }
+    }
+  }
+}
