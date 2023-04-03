@@ -11,7 +11,7 @@
 ## Flow of Authentication
 The authentication flow involves the display of a login form on the WebApp. Upon successful connection to the right MongoDB and input of the user's Telegram ID, a JWT Token will be recorded. The user will also receive a direct message from the bot, containing their logged in Zoo.Games ID, Primary Address, and Mirror Address. If there are any errors, an alert will be displayed to prompt the user to fix it.
 
-You can continue writing your BOT code to get TG user id and username for further gameplay. The Zoo.Games Developer Document can be followed at https://dev.zoo.games/. (https://dev.zoo.games/)
+You can continue writing your BOT code to get TG user id, username and ZooGames JWT for further gameplay. The Zoo.Games Developer Document can be followed at https://dev.zoo.games/. (https://dev.zoo.games/)
 
 
 ## BOT Code
