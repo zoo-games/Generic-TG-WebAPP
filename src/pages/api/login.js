@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     await client.connect();
     console.log('Connected to MongoDB');
 
-    const db_users = client.db('ZooQuiz').collection('users');
+    const db_users = client.db(process.env.DB_NAME).collection(process.env.DB_COLLECTION_USERS);
 
     console.log('BOT TOKEN', process.env.BOT_TOKEN)
     const { initData, user_id, zoogamesid, token2fa } = req.body;
