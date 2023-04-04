@@ -1,7 +1,7 @@
 ## Screenshot of Login WebAPP
 ![image](https://user-images.githubusercontent.com/128964/229464547-be7f2601-0aa3-4bce-bead-33ad2eda9481.png)
 
-## Example of use
+## Example of usecase
 You can try to access to talk with ZooQuiz bot https://t.me/ZooQuiz_bot and type /register then click on Login. It will popup Login WebAPP.
 You can provide your ZooGamesID and 2FA token to login and link your telegram id with ZooGamesID
 
