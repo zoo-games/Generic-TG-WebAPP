@@ -47,7 +47,7 @@ bot.sendMessage(msg.chat.id, 'Please click button below to login', {
 }
 ```
 
-## ENV Structure
+## ENV Structure of TESTNET
 
 ```
 #BOT AND DATABASE
@@ -67,3 +67,25 @@ ZG_APPROVE_AMOUNT=
 NETWORK=testnet
 EXPLORER=https://testnet.wanscan.org/tx/
 ```
+
+## ENV Structure of MAINNET
+
+```
+#BOT AND DATABASE
+BOT_TOKEN=
+DB_URI = mongodb+srv://[Your Mongo crential and endpoint]/?retryWrites=true&w=majority
+DB_NAME=MYGame
+DB_COLLECTION_USERS=users
+
+#ZOOGAMES
+ZG_API_KEY=
+ZG_SEC_KEY=
+ZG_API_SERVER=https://api-beta.zoo.games
+ZG_GAME_ADDRESS=
+ZG_APPROVE_AMOUNT=
+
+#NETWORK CONFIGURATION
+NETWORK=mainnet
+EXPLORER=https://www.wanscan.org/tx/
+```
+
