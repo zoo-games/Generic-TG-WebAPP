@@ -66,7 +66,7 @@ export default function Login() {
                                 </div>
 
                                 <input type="text" value={zoogamesid} onChange={(e) => {
-                                    setZoogamesid(e.target.value)
+                                    setZoogamesid(e.target.value.toLowerCase().trim())
                                 }} />
 
                                 <div className={styles.inputTitle} style={{ marginTop: 20 }}>
@@ -85,14 +85,14 @@ export default function Login() {
                                     </div>
                                 </div>
                                 <OtpInput
-                                    
+
                                     value={token2fa}
                                     onChange={setToken2fa}
                                     numInputs={6}
                                     containerStyle={styles.otpInput}
                                     renderInput={(props) => <input {...props} />}
                                 />
-                                
+
                                 <div className={styles.remark}>
                                     By connecting my account to {process.env.NEXT_PUBLIC_ZG_GAME_NAME}. I give permission to modiify or transfer my assets automatiicallly.
                                     I cerify that I will use my ZooGames account for the solo purpose of playing. I am aware that my ZooGames account is not a wallet.
@@ -111,7 +111,7 @@ export default function Login() {
                                         }
                                     }).catch(e => { setLoading(false); webapp.showAlert('Something wrong. Please try again'); })
                                 }}>
-                                    {loading ? <span className="loader" style={{margin:'0 auto'}}></span> : <><div className={styles.btnContent}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z" /></svg><span>CONNECT AND PLAY</span></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z" /></svg></>}
+                                    {loading ? <span className="loader" style={{ margin: '0 auto' }}></span> : <><div className={styles.btnContent}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z" /></svg><span>CONNECT AND PLAY</span></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z" /></svg></>}
                                 </button>
                                 <a className={styles.signup} tabIndex={4} onClick={() => { webapp.openLink("https://www.zoo.games/"); }}>
                                     <div className={styles.btnContent}>
