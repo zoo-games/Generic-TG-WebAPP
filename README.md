@@ -1,6 +1,9 @@
 ## Screenshot of Login WebAPP
 ![image](https://user-images.githubusercontent.com/128964/229464547-be7f2601-0aa3-4bce-bead-33ad2eda9481.png)
 
+## Example of usecase
+You can try accessing the ZooQuiz bot by going to https://t.me/ZooQuiz_bot and typing "/register" followed by clicking on "Login". This will bring up the Login WebAPP. You can then provide your ZooGamesID and 2FA token to log in and link your Telegram ID with your ZooGamesID.
+
 ## Prerequisite
 1. **MongoDB** can be used to store session records for your game. You can sign up for a free account at https://mongodb.com/ to test your game.
 2. For bot development using **NodeJS** stack, you can utilize "node-telegram-bot-api", which can be accessed at https://github.com/yagop/node-telegram-bot-api. (https://github.com/yagop/node-telegram-bot-api)
@@ -44,7 +47,7 @@ bot.sendMessage(msg.chat.id, 'Please click button below to login', {
 }
 ```
 
-## ENV Structure
+## ENV Structure of TESTNET
 
 ```
 #BOT AND DATABASE
@@ -64,3 +67,25 @@ ZG_APPROVE_AMOUNT=
 NETWORK=testnet
 EXPLORER=https://testnet.wanscan.org/tx/
 ```
+
+## ENV Structure of MAINNET
+
+```
+#BOT AND DATABASE
+BOT_TOKEN=
+DB_URI = mongodb+srv://[Your Mongo crential and endpoint]/?retryWrites=true&w=majority
+DB_NAME=MYGame
+DB_COLLECTION_USERS=users
+
+#ZOOGAMES
+ZG_API_KEY=
+ZG_SEC_KEY=
+ZG_API_SERVER=https://api-beta.zoo.games
+ZG_GAME_ADDRESS=
+ZG_APPROVE_AMOUNT=
+
+#NETWORK CONFIGURATION
+NETWORK=mainnet
+EXPLORER=https://www.wanscan.org/tx/
+```
+
