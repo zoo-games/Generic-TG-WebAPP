@@ -2,8 +2,7 @@
 ![image](https://user-images.githubusercontent.com/128964/229464547-be7f2601-0aa3-4bce-bead-33ad2eda9481.png)
 
 ## Example of usecase
-You can try to access to talk with ZooQuiz bot https://t.me/ZooQuiz_bot and type /register then click on Login. It will popup Login WebAPP.
-You can provide your ZooGamesID and 2FA token to login and link your telegram id with ZooGamesID
+You can try accessing the ZooQuiz bot by going to https://t.me/ZooQuiz_bot and typing "/register" followed by clicking on "Login". This will bring up the Login WebAPP. You can then provide your ZooGamesID and 2FA token to log in and link your Telegram ID with your ZooGamesID.
 
 ## Prerequisite
 1. **MongoDB** can be used to store session records for your game. You can sign up for a free account at https://mongodb.com/ to test your game.
