@@ -76,7 +76,7 @@ export default async function handler(req, res) {
                         }
                     }, { upsert: true }).then(async (result) => {
                         console.log('Passed Updated to DB');
-                        await bot.sendMessage(Number(user_id), 'Login Success with\n\n<b>ZooGames ID:</b>\n' + zoogamesid + '\n<b>Primary Address:</b>\n'+ payload.primaryAddress+'\n<b>Mirror Address:</b>\n'+payload.mirrorAddress, { parse_mode: 'HTML' });
+                        await bot.sendMessage(Number(user_id), 'Login successful with\n\n<b>ZooGames ID:</b>\n' + zoogamesid + '\n<b>Primary Address:</b>\n'+ payload.primaryAddress+'\n<b>Mirror Address:</b>\n'+payload.mirrorAddress, { parse_mode: 'HTML' });
                         res.status(200).json({ success: true, message: 'Login Success' })
                     });
                     return;
