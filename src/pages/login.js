@@ -65,7 +65,7 @@ export default function Login() {
                                     </div>
                                 </div>
 
-                                <input type="text" value={zoogamesid} onChange={(e) => {
+                                <input type="text" autoFocus disabled={loading} value={zoogamesid} onChange={(e) => {
                                     setZoogamesid(e.target.value.toLowerCase().trim())
                                 }} />
 
@@ -85,12 +85,12 @@ export default function Login() {
                                     </div>
                                 </div>
                                 <OtpInput
-
                                     value={token2fa}
                                     onChange={setToken2fa}
                                     numInputs={6}
                                     containerStyle={styles.otpInput}
-                                    renderInput={(props) => <input {...props} />}
+                                    renderInput={(props) => <input {...props} disabled={loading} />
+                                    }
                                 />
 
                                 <div className={styles.remark}>
@@ -108,6 +108,7 @@ export default function Login() {
                                         }
                                         else {
                                             webapp.showAlert(e.data.message);
+                                            setToken2fa('');
                                         }
                                     }).catch(e => { setLoading(false); webapp.showAlert('Something wrong. Please try again'); })
                                 }}>
